@@ -1,0 +1,104 @@
+anuja@WINDOWS-SD3MRH3:~$ pwd
+/home/anuja
+anuja@WINDOWS-SD3MRH3:~$ cd LinuxAssignment
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ touch file1.txt
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat > file.txt
+Anuja
+Balasaheb
+Supernis
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat file1.txt
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ rm file.txt
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat > file1.txt
+Anuja
+Balasaheb
+Supernis
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat file1.txt
+Anuja
+Balasaheb
+Supernis
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ mkdir docs
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cd docs
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment/docs$ cp file1.txt docs
+cp: cannot stat 'file1.txt': No such file or directory
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment/docs$ ls
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment/docs$ cd ..
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cp file1.txt docs
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cd docs
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment/docs$ mv file1.txt file2.txt
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment/docs$ ls
+file2.txt
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment/docs$ chmod 704 file2.txt
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment/docs$ ls -a -l
+total 12
+drwxr-xr-x 2 anuja anuja 4096 Mar  7 23:34 .
+drwxr-xr-x 3 anuja anuja 4096 Mar  7 23:31 ..
+-rwx---r-- 1 anuja anuja   26 Mar  7 23:33 file2.txt
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment/docs$ chown anuja file2.txt
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment/docs$ whoami
+anuja
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment/docs$ cd ..
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ find . -type f -name "*.txt"
+./file1.txt
+./docs/file2.txt
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ grep -n 'Anuja' file1.txt
+1:Anuja
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ date
+Thu Mar  7 23:39:43 IST 2024
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ ip route
+default via 172.30.16.1 dev eth0 proto kernel
+172.30.16.0/20 dev eth0 proto kernel scope link src 172.30.29.57
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ ping google.com
+PING google.com (142.250.199.174) 56(84) bytes of data.
+64 bytes from bom07s37-in-f14.1e100.net (142.250.199.174): icmp_seq=1 ttl=118 time=107 ms
+64 bytes from bom07s37-in-f14.1e100.net (142.250.199.174): icmp_seq=2 ttl=118 time=12.7 ms
+64 bytes from bom07s37-in-f14.1e100.net (142.250.199.174): icmp_seq=3 ttl=118 time=10.2 ms
+64 bytes from bom07s37-in-f14.1e100.net (142.250.199.174): icmp_seq=4 ttl=118 time=23.6 ms
+64 bytes from bom07s37-in-f14.1e100.net (142.250.199.174): icmp_seq=5 ttl=118 time=9.40 ms
+64 bytes from bom07s37-in-f14.1e100.net (142.250.199.174): icmp_seq=6 ttl=118 time=8.22 ms
+64 bytes from bom07s37-in-f14.1e100.net (142.250.199.174): icmp_seq=7 ttl=118 time=11.3 ms
+64 bytes from bom07s37-in-f14.1e100.net (142.250.199.174): icmp_seq=8 ttl=118 time=11.9 ms
+64 bytes from bom07s37-in-f14.1e100.net (142.250.199.174): icmp_seq=9 ttl=118 time=19.6 ms
+64 bytes from bom07s37-in-f14.1e100.net (142.250.199.174): icmp_seq=10 ttl=118 time=11.9 ms
+64 bytes from bom07s37-in-f14.1e100.net (142.250.199.174): icmp_seq=11 ttl=118 time=9.90 ms
+64 bytes from bom07s37-in-f14.1e100.net (142.250.199.174): icmp_seq=12 ttl=118 time=7.87 ms
+64 bytes from bom07s37-in-f14.1e100.net (142.250.199.174): icmp_seq=13 ttl=118 time=20.6 ms
+64 bytes from bom07s37-in-f14.1e100.net (142.250.199.174): icmp_seq=14 ttl=118 time=12.9 ms
+64 bytes from bom07s37-in-f14.1e100.net (142.250.199.174): icmp_seq=15 ttl=118 time=15.1 ms
+64 bytes from bom07s37-in-f14.1e100.net (142.250.199.174): icmp_seq=16 ttl=118 time=9.50 ms
+64 bytes from bom07s37-in-f14.1e100.net (142.250.199.174): icmp_seq=17 ttl=118 time=19.4 ms
+64 bytes from bom07s37-in-f14.1e100.net (142.250.199.174): icmp_seq=18 ttl=118 time=10.5 ms
+64 bytes from bom07s37-in-f14.1e100.net (142.250.199.174): icmp_seq=19 ttl=118 time=12.4 ms
+^C
+--- google.com ping statistics ---
+19 packets transmitted, 19 received, 0% packet loss, time 18029ms
+rtt min/avg/max/mdev = 7.866/18.070/106.577/21.314 ms
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ zip -r zip docs docs
+  adding: docs/ (stored 0%)
+  adding: docs/file2.txt (stored 0%)
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ ls -a -l
+total 20
+drwxr-xr-x 3 anuja anuja 4096 Mar  7 23:41 .
+drwxr-x--- 9 anuja anuja 4096 Mar  7 23:25 ..
+drwxr-xr-x 2 anuja anuja 4096 Mar  7 23:34 docs
+-rw-r--r-- 1 anuja anuja   26 Mar  7 23:30 file1.txt
+-rw-r--r-- 1 anuja anuja  342 Mar  7 23:41 zip.zip
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ mkdir cdac
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ zip -r cdac.zip docs
+  adding: docs/ (stored 0%)
+  adding: docs/file2.txt (stored 0%)
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ unzip cdac.zip
+Archive:  cdac.zip
+replace docs/file2.txt? [y]es, [n]o, [A]ll, [N]one, [r]ename: r
+new name: CdacMumbai
+ extracting: CdacMumbai
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ vim file1.txt
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ sed -i 's/anuja/Cdac/g' file1.txt
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat file1.txt
+Anuja
+Balasaheb
+Supernis
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ sed -i 's/Anuja/Cdac/g' file1.txt
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat file1.txt
+Cdac
+Balasaheb
+Supernis

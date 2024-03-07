@@ -1,0 +1,197 @@
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat > data.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+14
+15
+16
+^C
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ head -n 10 data.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ head 10 data.txt
+head: cannot open '10' for reading: No such file or directory
+==> data.txt <==
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ head -13 data.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+14
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ tail 5 data.txt
+tail: cannot open '5' for reading: No such file or directory
+==> data.txt <==
+6
+7
+8
+9
+10
+11
+12
+14
+15
+16
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ tail -n 5 data.txt
+11
+12
+14
+15
+16
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat > numbers.txt
+5
+10
+15
+2
+20
+25
+30
+35
+40
+45
+50
+^C
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ head 15 data.txt
+head: cannot open '15' for reading: No such file or directory
+==> data.txt <==
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ head -15 data.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+14
+15
+16
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ tail -5 data.txt
+11
+12
+14
+15
+16
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat > input.txt
+anuja balasaheb supernis^C
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ tr 'a-z' 'A-Z' < input.txt > output.txt
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ ls
+LinuxAssignment  abc.zip  data.txt  docs  docs1  file1.txt  input.txt  numbers.txt  output.txt  zip.zip
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ tr 'a-z' 'A-Z' < input.txt > output.txt
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ ls
+LinuxAssignment  abc.zip  data.txt  docs  docs1  file1.txt  input.txt  numbers.txt  output.txt  zip.zip
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat output.txt
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat output.txt
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat duplicate.txt
+cat: duplicate.txt: No such file or directory
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat output.txt
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ ls
+LinuxAssignment  abc.zip  data.txt  docs  docs1  file1.txt  input.txt  numbers.txt  output.txt  zip.zip
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat input.txt
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ ls
+LinuxAssignment  abc.zip  data.txt  docs  docs1  file1.txt  input.txt  numbers.txt  output.txt  zip.zip
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat > input.txt
+anuja^C
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat > input.txt
+anujaanuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ tr 'a-z' 'A-Z' < input.txt > output.txt
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ tr 'a-z' 'A-Z' <input.txt> output.txt
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ ls
+LinuxAssignment  abc.zip  data.txt  docs  docs1  file1.txt  input.txt  numbers.txt  output.txt  zip.zip
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat output.txt
+ANUJAanuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat duplicate.txt
+cat: duplicate.txt: No such file or directory
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat > duplicate.txt
+anuja1234
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat >> duplicate.txt
+Anu123anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat duplicate.txt
+anuja1234
+Anu123anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat >> duplicate.txt
+anu
+anu
+int
+int
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat duplicate.txt
+anuja1234
+Anu123anu
+anu
+int
+int
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ uniq duplicate.txt
+anuja1234
+Anu123anu
+anu
+int
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ uniq -u duplicate.txt
+anuja1234
+Anu123anu
+anu
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ uniq hello.txt
+uniq: hello.txt: No such file or directory
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ uniq -u duplicate.txt
+anuja1234
+Anu123anu
+anu
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ sort duplicate.txt | uniq
+Anu123anu
+anu
+anuja1234
+int
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ cat > fruit.txt
+mango mango
+applo
+apple
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$ sort fruit.txt | uniq -c
+      1 apple
+      1 applo
+      1 mango mango
+anuja@WINDOWS-SD3MRH3:~/LinuxAssignment$
+
+
